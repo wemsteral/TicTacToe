@@ -1,11 +1,16 @@
 # frozen_string_literal: true
 
 class Game
-  def run_game
-    puts "
+  attr_reader :board
+  def initialize
+    @board = "
     ---
     ---
     ---"
+  end
+
+  def run_game
+    puts @board
   end
 end
 
